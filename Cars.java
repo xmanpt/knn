@@ -15,7 +15,7 @@ public class Cars {
         ds.loadDataset();
 
         KnnRun<CarsDataset, CarsSample, CarsClass> knnRun = new KnnRun<>(ds);
-        System.out.println(knnRun.getPrecision());
+        System.out.println(knnRun.run());
 
 
     }

@@ -12,7 +12,9 @@ public class Iris {
         ds.loadDataset();
 
         KnnRun<IrisDataset, IrisSample, IrisClass> knnRun = new KnnRun<>(ds);
-        System.out.println(knnRun.getPrecision());
+        System.out.println(knnRun.run(0.3d, 3 ));
+        knnRun.study();
+
 
 
     }
